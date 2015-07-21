@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Band</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/global.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/global.js"></script>
+    <script src="js/impact_level.js"></script>
+    <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  </head>
+
+  <body>
+
+    <div data-role="page" class="jqm-band jqm-device-confirm">
+
+      <div data-role="header" class="jqm-header">
+        <h2><img src="img/jquery-logo.png" alt="jQuery Mobile"></h2>
+        <a
+          href="#"
+          class="jqm-navmenu-link  \
+                ui-btn             \
+                ui-btn-icon-notext \
+                ui-corner-all      \
+                ui-icon-bars       \
+                ui-nodisc-icon     \
+                ui-alt-icon        \
+                ui-btn-left"
+        >
+          Menu
+        </a>
+
+        <a
+          href="#"
+          class="jqm-panel-link    \
+                ui-btn             \
+                ui-btn-icon-notext \
+                ui-corner-all      \
+                ui-icon-bullets    \
+                ui-nodisc-icon     \
+                ui-alt-icon        \
+                ui-btn-right"
+        >
+          Search
+        </a>
+
+      </div><!--END.header..................................................-->
+
+      <div role="main" class="ui-content jqm-content">
+
+        <h3 class="text-center border-bottom">
+          <a
+            href="#myPopup"
+            data-rel="popup"
+            class="ui-btn \
+                  ui-btn-inline \
+                  ui-corner-all \
+                  ui-icon-gear \
+                  ui-btn-icon-left"
+          >
+            Viewing <span>Device #1: Eric L ...!</span>
+          </a>
+        </h3>
+
+        <div data-role="popup" id="myPopup" class="ui-content">
+
+          <h3>Select device to view.</h3>
+
+          <div data-role="collapsibleset">
+
+            <div data-role="collapsible">
+              <h3>Device #1: Eric L ...!</h3>
+              <p>MAC ID# 68:5D:43:BA:1C:87.</p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Device #2: T-Bone O ...!</h3>
+              <p>MAC ID# 68:5D:43:BA:1C:01.</p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Device #3: C-mah A ...!</h3>
+              <p>MAC ID# 68:5D:43:BA:1C:02.</p>
+            </div>
+
+            <div data-role="collapsible">
+              <h3>Device #4: Prat G ...!</h3>
+              <p>MAC ID# 68:5D:43:BA:1C:03.</p>
+            </div>
+
+          </div><!--END.collapsible.set.....................................-->
+
+        </div><!--END.popup.with.collapsible.set............................-->
+
+        <h3 class="text-center gray">IMPACT STATUS</h3>
+
+        <div id="impact_buttons" class="button-group">
+          <a id="severe_button" href="#">SEVERE</a>
+          <a id="moderate_button" href="#">MODERATE</a>
+          <a id="mild_button" href="#">MILD</a>
+          <a id="ok_button" href="#">OK</a>
+        </div>
+
+        <div class="ui-grid-a custom-grid border-top">
+
+          <div class="ui-block-a btn-set">
+            <input type="image" src="img/back.png" id="back" class="btn-back"/>
+            <input
+              type="image"
+              src="img/detail.png"
+              id="detail"
+              class="btn-detail"
+            />
+          </div>
+
+          <div class="ui-block-b border-left tabular">
+            <div class="block-h txt-center">
+              <b>TEMP</b>
+              <b class="red">98.7&deg;F</b>
+            </div>
+
+            <div class="block-h txt-center">
+              <b>LED</b>
+              <b class="txt-gray">OFF</b>
+            </div>
+
+            <div class="block-h txt-center">
+              <b>STATUS</b>
+              <b class="txt-green">Connected</b>
+            </div>
+          </div>
+
+        </div><!--END.grid-a................................................-->
+
+      </div><!--END.main.content............................................-->
+
+      <div
+        data-role="panel"
+        class="jqm-navmenu-panel"
+        data-position="left"
+        data-display="overlay"
+        data-theme="a"
+      >
+        <ul class="jqm-list ui-alt-icon ui-nodisc-icon">
+          <li data-icon="home"><a href="/band/">Home</a></li>
+        </ul>
+      </div><!--END.left.panel..............................................-->
+
+      <div
+        data-role="footer"
+        data-position="fixed"
+        data-tap-toggle="false"
+        class="jqm-footer"
+      >
+        <p>Copyright 2015 HIJI Band</p>
+      </div><!--END.footer..................................................-->
+
+      <!--
+        TODO: This should become an external panel so
+        we can add input to markup (unique ID)
+      -->
+
+      <div
+        data-role="panel"
+        class="jqm-right-panel"
+        data-position="right"
+        data-display="overlay"
+        data-theme="a"
+      >
+        <ul
+          class="jqm-list"
+          data-filter-placeholder="Search demos..."
+          data-filter-reveal="true"
+        >
+          <li
+            data-filtertext="demos homepage"
+            data-icon="home"><a href=".././">Home</a>
+          </li>
+        </ul>
+      </div><!--END.right.panel.............................................-->
+
+    </div><!--END.page......................................................-->
+
+  </body>
+</html>
