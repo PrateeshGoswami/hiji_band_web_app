@@ -1,6 +1,6 @@
 # hiji_band_web_app
 What is it 
-This application will take temperature and  X Y and Z acceleration data  from a device using Bluetooth .Based on the data the app will determine if the impact was severe,moderate or mild.The app will also plot a detail graph.There will be a Battery level of device and Status of connectivity displayed.
+This application will take temperature and  X Y and Z acceleration data  from a device using Bluetooth. Based on the data the app will determine if the impact was severe,moderate or mild.The app will also plot a detail graph.There will be a Battery level of device and Status of connectivity displayed.
 Licence and Copyright
 This is the official repository of Movement Interactive's HijiBand. All code or SW contributed here is subject to NDA and agreements you have with Movement Interactive.
 Installation/How to Run the app
